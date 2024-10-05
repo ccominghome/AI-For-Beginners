@@ -1,154 +1,159 @@
-# Introduction to AI
+# 人工智能简介
 
-![Summary of Introduction of AI content in a doodle](../sketchnotes/ai-intro.png)
+![AI简介内容的涂鸦总结](../sketchnotes/ai-intro.png)
 
-> Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
+> 思维导图由 [Tomomi Imura](https://twitter.com/girlie_mac) 绘制
 
-## [Pre-lecture quiz](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/101)
+## [课前测验](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/101)
 
-**Artificial Intelligence** is an exciting scientific discipline that studies how we can make computers exhibit intelligent behavior, e.g. do those things that human beings are good at doing.
+**人工智能** 是一门令人兴奋的科学学科，研究如何让计算机表现出智能行为，例如执行人类擅长的任务。
 
-Originally, computers were invented by [Charles Babbage](https://en.wikipedia.org/wiki/Charles_Babbage) to operate on numbers following a well-defined procedure - an algorithm. Modern computers, even though significantly more advanced than the original model proposed in the 19th century, still follow the same idea of controlled computations. Thus it is possible to program a computer to do something if we know the exact sequence of steps that we need to do in order to achieve the goal.
+最初，计算机是由 [查尔斯·巴贝奇](https://en.wikipedia.org/wiki/Charles_Babbage) 发明的，用于按照明确定义的程序（算法）进行数值计算。现代计算机，尽管比19世纪提出的原始模型先进得多，仍遵循相同的受控计算理念。因此，如果我们知道为了达到目标需要执行的确切步骤顺序，就可以编程让计算机完成某项任务。
 
-![Photo of a person](images/dsh_age.png)
+![一个人的照片](images/dsh_age.png)
 
-> Photo by [Vickie Soshnikova](http://twitter.com/vickievalerie)
+> 照片由 [Vickie Soshnikova](http://twitter.com/vickievalerie) 提供
 
-> ✅ Defining the age of a person from his or her photograph is a task that cannot be explicitly programmed, because we do not know how we come up with a number inside our head when we do it.
-
----
-
-There are some tasks, however, that we do not explicitly know how to solve. Consider determining the age of a person from his/her photograph. We somehow learn to do it, because we have seen many examples of people of different age, but we cannot explicitly explain how we do it, nor can we program the computer to do it. This is exactly the kind of task that are of interest to **Artificial Intelligence** (AI for short).
-
-✅ Think of some tasks that you could offload to a computer that would benefit from AI. Consider the fields of finance, medicine, and the arts - how are these fields benefiting today from AI?
-
-## Weak AI vs. Strong AI
-
-Weak AI | Strong AI
----------------------------------------|-------------------------------------
-Weak AI refers to AI systems that are designed and trained for a specific task or a narrow set of tasks.|Strong AI, or Artificial General Intelligence (AGI), refers to AI systems with human-level intelligence and understanding.
-These AI systems are not generally intelligent; they excel in performing a predefined task but lack true understanding or consciousness.|These AI systems have the ability to perform any intellectual task that a human being can do, adapt to different domains, and possess a form of consciousness or self-awareness.
-Examples of weak AI include virtual assistants like Siri or Alexa, recommendation algorithms used by streaming services, and chatbots that are designed for specific customer service tasks.|Achieving Strong AI is a long-term goal of AI research and would require the development of AI systems that can reason, learn, understand, and adapt across a wide range of tasks and contexts.
-Weak AI is highly specialized and does not possess human-like cognitive abilities or general problem-solving capabilities beyond its narrow domain.|Strong AI is currently a theoretical concept, and no AI system has reached this level of general intelligence
-
-for more infomation refer **[Artificial General Intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence)** (AGI).
-## The Definition of Intelligence and the Turing Test
-
-One of the problems when dealing with the term **[Intelligence](https://en.wikipedia.org/wiki/Intelligence)** is that there is no clear definition of this term. One can argue that intelligence is connected to **abstract thinking**, or to **self-awareness**, but we cannot properly define it.
-
-![Photo of a Cat](images/photo-cat.jpg)
-
-> [Photo](https://unsplash.com/photos/75715CVEJhI) by [Amber Kipp](https://unsplash.com/@sadmax) from Unsplash
-
-To see the ambiguity of a term *intelligence*, try answering a question: "Is a cat intelligent?". Different people tend to give different answers to this question, as there is no universally accepted test to prove the assertion is true or not. And if you think there is - try running your cat through an IQ test...
-
-✅ Think for a minute about how you define intelligence. Is a crow who can solve a maze and get at some food intelligent? Is a child intelligent?
+> ✅ 从一个人的照片中确定其年龄是一个无法明确编程的任务，因为我们不知道在执行此操作时大脑是如何得出一个数字的。
 
 ---
 
-When speaking about AGI we need to have some way to tell if we have created a truly intelligent system. [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) proposed a way called a **[Turing Test](https://en.wikipedia.org/wiki/Turing_test)**, which also acts like a definition of intelligence. The test compares a given system to something inherently intelligent - a real human being, and because any automatic comparison can be bypassed by a computer program, we use a human interrogator. So, if a human being is unable to distinguish between a real person and a computer system in text-based dialogue - the system is considered intelligent.
+然而，有一些任务我们并不知道如何明确解决。例如，从一个人的照片中确定其年龄。我们以某种方式学会了这样做，因为我们看到了许多不同年龄的人，但我们无法明确解释我们是如何做到的，也无法编程让计算机做到。这正是**人工智能**（简称AI）关注的任务类型。
 
-> A chat-bot called [Eugene Goostman](https://en.wikipedia.org/wiki/Eugene_Goostman), developed in St.Petersburg, came close to passing the Turing test in 2014 by using a clever personality trick. It announced up front that it was a 13-year old Ukrainian boy, which would explain the lack of knowledge and some discrepancies in the text. The bot convinced 30% of the judges that it was human after a 5 minute dialogue, a metric that Turing believed a machine would be able to pass by 2000. However, one should understand that this does not indicate that we have created an intelligent system, or that a computer system has fooled the human interrogator - the system didn't fool the humans, but rather the bot creators did!
+✅ 想一些你可以交给计算机并从AI中受益的任务。考虑金融、医学和艺术等领域——这些领域今天如何从AI中受益？
 
-✅ Have you ever been fooled by a chat bot into thinking that you are speaking to a human? How did it convince you?
+## 弱AI vs. 强AI
 
-## Different Approaches to AI
+弱AI | 强AI
+---|---
+弱AI指的是为特定任务或一组狭窄任务设计和训练的AI系统。|强AI，或称人工通用智能（AGI），指的是具有与人类相当的智能和理解能力的AI系统。
+这些AI系统并没有普遍的智能；它们在执行预定义任务方面表现出色，但缺乏真正的理解或意识。|这些AI系统具有执行任何人类能够完成的智力任务的能力，能够适应不同领域，并拥有某种形式的意识或自我意识。
+弱AI的例子包括像Siri或Alexa这样的虚拟助手，流媒体服务使用的推荐算法，以及为特定客户服务任务设计的聊天机器人。|实现强AI是AI研究的长期目标，需要开发能够在广泛任务和情境中进行推理、学习、理解和适应的AI系统。
+弱AI高度专业化，并不具有人类般的认知能力或超出其狭窄领域的通用解决问题的能力。|强AI目前是一个理论概念，没有任何AI系统达到这种通用智能水平。
 
-If we want a computer to behave like a human, we need somehow to model inside a computer our way of thinking. Consequently, we need to try to understand what makes a human being intelligent.
+有关更多信息，请参考**[人工通用智能](https://en.wikipedia.org/wiki/Artificial_general_intelligence)**（AGI）。
 
-> To be able to program intelligence into a machine, we need to understand how our own processes of making decisions work. If you do a little self-introspection, you will realize that there are some processes that happen subconsciously – eg. we can distinguish a cat from a dog without thinking about it - while some others involve reasoning.
+## 智力的定义和图灵测试
 
-There are two possible approaches to this problem:
+当涉及到**[智力](https://en.wikipedia.org/wiki/Intelligence)**这个术语时，其中一个问题是没有明确定义这个术语。有人可以争辩说，智力与**抽象思维**或**自我意识**有关，但我们无法正确定义它。
 
-Top-down Approach (Symbolic Reasoning) | Bottom-up Approach (Neural Networks)
----------------------------------------|-------------------------------------
-A top-down approach models the way a person reasons to solve a problem. It involves extracting **knowledge** from a human being, and representing it in a computer-readable form. We also need to develop a way to model **reasoning** inside a computer. | A bottom-up approach models the structure of a human brain, consisting of a huge number of simple units called **neurons**. Each neuron acts like a weighted average of its inputs, and we can train a network of neurons to solve useful problems by providing **training data**.
+![猫的照片](images/photo-cat.jpg)
 
-There are also some other possible approaches to intelligence:
+> [照片](https://unsplash.com/photos/75715CVEJhI)由 [Amber Kipp](https://unsplash.com/@sadmax) 提供，来自Unsplash
 
-* An **Emergent**, **Synergetic** or **multi-agent approach** are based on the fact that complex intelligent behaviour can be obtained by an interaction of a large number of simple agents. According to [evolutionary cybernetics](https://en.wikipedia.org/wiki/Global_brain#Evolutionary_cybernetics), intelligence can *emerge* from more simple, reactive behaviour in the process of *metasystem transition*.
+看一下术语*智力*的模糊性，试回答一个问题：“猫是智能的吗？”。不同的人往往对这个问题有不同的答案，因为没有一个普遍接受的测试来证明这个断言是对还是错。如果你认为有——试着让你的猫参加智商测试……
 
-* An **Evolutionary approach**, or **genetic algorithm** is an optimization process based on the principles of evolution.
+✅ 花一分钟思考一下你如何定义智力。能够解决迷宫并获取食物的乌鸦是智能的吗？一个孩子是智能的吗？
 
-We will consider those approaches later in the course, but right now we will focus on two main directions: top-down and bottom-up.
+---
 
-### The Top-Down Approach
+当谈论AGI时，我们需要有某种方式来判断我们是否创建了一个真正智能的系统。[艾伦·图灵](https://en.wikipedia.org/wiki/Alan_Turing)提出了一种称为**[图灵测试](https://en.wikipedia.org/wiki/Turing_test)**的方法，这也是智力的一种定义。该测试将一个给定的系统与某种固有智能的东西进行比较——真实的人类，因为任何自动的比较都可以被计算机程序绕过，我们使用一个人类审问者。所以，如果一个人类无法在基于文本的对话中区分真实的人和计算机系统——该系统就被认为是智能的。
 
-In a **top-down approach**, we try to model our reasoning.  Because we can follow our thoughts when we reason, we can try to formalize this process and program it inside the computer. This is called **symbolic reasoning**.
+> 一个叫做[Eugene Goostman](https://en.wikipedia.org/wiki/Eugene_Goostman)的聊天机器人，在2014年通过使用一个巧妙的个性技巧接近通过图灵测试。它一开始就宣布自己是一个13岁的乌克兰男孩，这可以解释知识的缺乏和文本中的一些不一致。这款机器人在5分钟的对话后说服了30%的评委认为它是人类，图灵认为一个机器在2000年可以通过这个测试。但是，人们应该理解，这并不意味着我们已经创建了一个智能系统，或者计算机系统骗过了人类审问者——系统并没有骗过人类，而是机器人的创造者骗过了人类！
 
-People tend to have some rules in their head that guide their decision making processes. For example, when a doctor is diagnosing a patient, he or she may realize that a person has a fever, and thus there might be some inflammation going on inside the body. By applying a large set of rules to a specific problem a doctor may be able to come up with the final diagnosis.
+✅ 你有被聊天机器人骗以为在与人类对话过吗？它是如何说服你的？
 
-This approach relies heavily on **knowledge representation** and **reasoning**. Extracting knowledge from a human expert might be the most difficult part, because a doctor in many cases would not know exactly why he or she is coming up with a particular diagnosis. Sometimes the solution just comes up in his or her head without explicit thinking. Some tasks, such as determining the age of a person from a photograph, cannot be at all reduced to manipulating knowledge.
+## AI的不同方法
 
-### Bottom-Up Approach
+如果我们想要计算机像人类一样行动，我们需要在计算机内部模拟我们的思维方式。因此，我们需要尝试理解是什么使得人类成为智能的。
 
-Alternately, we can try to model the simplest elements inside our brain – a neuron. We can construct a so-called **artificial neural network** inside a computer, and then try to teach it to solve problems by giving it examples. This process is similar to how a newborn child learns about his or her surroundings by making observations.
+> 为了能够将智能编程到机器中，我们需要理解我们自己的决策过程是如何工作的。如果你进行一些自我内省，你会意识到有些过程是潜意识发生的——例如，我们可以不思考地区分猫和狗——而有些过程涉及推理。
 
-✅ Do a little research on how babies learn. What are the basic elements of a baby's brain?
+解决这个问题有两种可能的方法：
 
-> | What about ML?         |      |
+自顶向下方法（符号推理） | 自底向上方法（神经网络）
+---|---
+自顶向下方法模拟一个人推理解决问题的方式。它涉及从人类中提取**知识**，并将其以计算机可读的形式呈现。我们还需要开发一种在计算机中建模**推理**的方法。|自底向上方法模拟人类大脑的结构，由大量简单单元称为**神经元**组成。每个神经元像其输入的加权平均一样工作，通过提供**训练数据**可以训练神经元网络来解决有用的问题。
+
+智能还有一些其他可能的方法：
+
+* **涌现**、**协同**或**多代理方法**基于这样一个事实：复杂的智能行为可以通过大量简单代理的互动获得。根据[进化控制论](https://en.wikipedia.org/wiki/Global_brain#Evolutionary_cybernetics)，智能可以在*元系统转变*的过程中从更简单的、反应性的行为中**涌现**。
+
+* **进化方法**，或**遗传算法**是一种基于进化原理的优化过程。
+
+我们将在课程后期讨论这些方法，但现在我们将重点关注两个主要方向：自顶向下和自底向上。
+
+### 自顶向下方法
+
+在**自顶向下方法**中，我们试图模拟我们的推理过程。因为我们在推理时可以跟随自己的思维，我们可以尝试将这个过程形式化并在计算机中编程。这被称为**符号推理**。
+
+人们倾向于在头脑中拥有一些指导决策过程的规则。例如，当医生在为病人诊断时，他或她可能会意识到一个人发烧了，因此体内可能有一些炎症。通过将一大组规则应用于一个特定的问题，医生可能能够得出最终的诊断。
+
+这种方法在很大程度上依赖于**知识表示**和**推理**。从人类专家中提取知识可能是最困难的部分，因为医生在许多情况下并不知道他或她为什么得出某个特定诊断。有时解决方案只是出现在他或她的头脑中，而没有明确的思考。一些任务，例如从照片中确定一个人的年龄，根本无法通过操纵知识来减少。
+
+### 自底向上方法
+
+或者，我们可以试着模拟我们大脑中最简单的元素——神经元。我们可以在计算机内部构建所谓的**人工神经网络**，然后尝试通过给它示例来教它解决问题。这个过程类似于新生儿通过观察周围环境来学习。
+
+✅ 研究一下婴儿是如何学习的。婴儿大脑的基本元素是什么？
+
+> | 关于机器学习？ | |
 > |--------------|-----------|
-> | Part of Artificial Intelligence that is based on computer learning to solve a problem based on some data is called **Machine Learning**. We will not consider classical machine learning in this course - we refer you to a separate [Machine Learning for Beginners](http://aka.ms/ml-beginners) curriculum. |   ![ML for Beginners](images/ml-for-beginners.png)    |
+> | 基于计算机通过一些数据学习解决问题的人工智能的一部分称为**机器学习**。本课程中我们不会考虑经典的机器学习——我们推荐您参阅单独的 [机器学习初学者](http://aka.ms/ml-beginners) 课程。 | ![初学者的机器学习](images/ml-for-beginners.png) |
 
-## A Brief History of AI
+## 人工智能简史
 
-Artificial Intelligence was started as a field in the middle of the twentieth century. Initially, symbolic reasoning was a prevalent approach, and it led to a number of important successes, such as expert systems – computer programs that were able to act as an expert in some limited problem domains. However, it soon became clear that such approach does not scale well. Extracting the knowledge from an expert, representing it in a computer, and keeping that knowledgebase accurate turns out to be a very complex task, and too expensive to be practical in many cases. This led to so-called [AI Winter](https://en.wikipedia.org/wiki/AI_winter) in the 1970s.
+人工智能作为一个领域始于20世纪中期。最初，符号推理是一种流行的方法，它带来了许多重要的成功，例如专家系统——能够在一些有限的问题领域中充当专家的计算机程序。然而，很快就清楚，这种方法扩展性不好。从专家中提取知识，在计算机中表示，以及保持知识库的准确性，证明是一项非常复杂的任务，并且在许多情况下成本过高，难以实用。这导致了20世纪70年代的所谓[AI寒冬](https://en.wikipedia.org/wiki/AI_winter)。
 
-<img alt="Brief History of AI" src="images/history-of-ai.png" width="70%"/>
+<img alt="AI简史" src="images/history-of-ai.png" width="70%"/>
 
-> Image by [Dmitry Soshnikov](http://soshnikov.com)
+> 图片由 [Dmitry Soshnikov](http://soshnikov.com) 提供
 
-As time passed, computing resources became cheaper, and more data has become available, so neural network approaches started demonstrating great performance in competing with human beings in many areas, such as computer vision or speech understanding. In the last decade, the term Artificial Intelligence has been mostly used as a synonym for Neural Networks, because most of the AI successes that we hear about are based on them.
+随着时间的推移，计算资源变得更便宜，更多的数据变得可用，因此神经网络方法开始在许多领域表现出与人类竞争的卓越表现，例如计算机视觉或语音理解。在过去的十年里，术语人工智能大多被用作神经网络的同义词，因为我们听到的大多数AI的成功都是基于它们。
 
-We can observe how the approaches changed, for example, in creating a chess playing computer program:
+我们可以观察到方法的改变，例如在创建一个下棋的计算机程序方面：
 
-* Early chess programs were based on search – a program explicitly tried to estimate possible moves of an opponent for a given number of next moves, and selected an optimal move based on the optimal position that can be achieved in a few moves. It led to the development of the so-called [alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) search algorithm.
-* Search strategies work well toward the end of the game, where the search space is limited by a small number of possible moves. However, at the beginning of the game, the search space is huge, and the algorithm can be improved by learning from existing matches between human players. Subsequent experiments employed so-called [case-based reasoning](https://en.wikipedia.org/wiki/Case-based_reasoning), where the program looked for cases in the knowledge base very similar to the current position in the game.
-* Modern programs that win over human players are based on neural networks and [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning), where the programs learn to play solely by playing a long time against themselves and learning from their own mistakes – much like human beings do when learning to play chess. However, a computer program can play many more games in much less time, and thus can learn much faster.
+* 早期的棋程序基于搜索——程序明确尝试估计对手在给定几个下一步动作后的可能移动，并基于几步内可以达到的最佳位置选择一个最优动作。这导致了所谓的[alpha-beta剪枝](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)搜索算法的发展。
 
-✅ Do a little research on other games that have been played by AI.
+* 搜索策略在游戏结束时工作良好，因为搜索空间被少量可能的移动限制。然而，在游戏开始时，搜索空间是巨大的，算法可以通过学习人类玩家之间的现有比赛来改进。随后的实验采用了所谓的[基于案例的推理](https://en.wikipedia.org/wiki/Case-based_reasoning)，程序在知识库中寻找与游戏中当前局面非常相似的案例。
 
-Similarly, we can see how the approach towards creating “talking programs” (that might pass the Turing test) changed:
+* 现代胜过人类玩家的程序基于神经网络和[强化学习](https://en.wikipedia.org/wiki/Reinforcement_learning)，程序仅通过与自己长时间对弈并从自己的错误中学习来学习下棋——就像人类学习下棋一样。然而，计算机程序可以在更短的时间内下更多的游戏，因此可以学习得更快。
 
-* Early programs of this kind such as [Eliza](https://en.wikipedia.org/wiki/ELIZA), were based on very simple grammatical rules and the re-formulation of the input sentence into a question.
-* Modern assistants, such as Cortana, Siri or Google Assistant are all hybrid systems that use Neural networks to convert speech into text and recognize our intent, and then employ some reasoning or explicit algorithms to perform required actions.
-* In the future, we may expect a complete neural-based model to handle dialogue by itself. The recent GPT and [Turing-NLG](https://turing.microsoft.com/) family of neural networks show great success in this.
+✅ 研究一下其他由AI玩的游戏。
 
-<img alt="the Turing test's evolution" src="images/turing-test-evol.png" width="70%"/>
+同样，我们可以看到创建“会说话的程序”（可能通过图灵测试）的方法的改变：
 
-> Image by Dmitry Soshnikov, [photo](https://unsplash.com/photos/r8LmVbUKgns) by [Marina Abrosimova](https://unsplash.com/@abrosimova_marina_foto), Unsplash
+* 这类早期的程序如[Eliza](https://en.wikipedia.org/wiki/ELIZA)，基于非常简单的语法规则和将输入句子重新表述为问题。
 
-## Recent AI Research
+* 现代助手，如Cortana、Siri或Google Assistant，都是混合系统，使用神经网络将语音转换为文本并识别我们的意图，然后采用一些推理或明确算法来执行所需的动作。
 
-The huge recent growth in neural network research started around 2010, when large public datasets started to become available. A huge collection of images called [ImageNet](https://en.wikipedia.org/wiki/ImageNet), which contains around 14 million annotated images, gave birth to the [ImageNet Large Scale Visual Recognition Challenge](https://image-net.org/challenges/LSVRC/).
+* 在未来，我们可能会期待一个完全基于神经网络的模型自行处理对话。最近的GPT和[Turing-NLG](https://turing.microsoft.com/)系列神经网络在这方面表现出色。
 
-![ILSVRC Accuracy](images/ilsvrc.gif)
+<img alt="图灵测试的演变" src="images/turing-test-evol.png" width="70%"/>
 
-> Image by [Dmitry Soshnikov](http://soshnikov.com)
+> 图片由 Dmitry Soshnikov 提供，[照片](https://unsplash.com/photos/r8LmVbUKgns)由 [Marina Abrosimova](https://unsplash.com/@abrosimova_marina_foto) 提供，来自Unsplash
 
-In 2012, [Convolutional Neural Networks](../4-ComputerVision/07-ConvNets/README.md) were first used in image classification, which led to a significant drop in classification errors (from almost 30% to 16.4%). In 2015, ResNet architecture from Microsoft Research [achieved human-level accuracy](https://doi.org/10.1109/ICCV.2015.123).
+## 最近的AI研究
 
-Since then, Neural Networks demonstrated very successful behaviour in many tasks:
+神经网络研究的巨大增长始于2010年左右，当时大量公共数据集开始变得可用。一个叫做[ImageNet](https://en.wikipedia.org/wiki/ImageNet)的庞大图像集合，包含约1400万张标注图像，催生了[ImageNet大规模视觉识别挑战赛](https://image-net.org/challenges/LSVRC/)。
+
+![ILSVRC准确率](images/ilsvrc.gif)
+
+> 图片由 [Dmitry Soshnikov](http://soshnikov.com) 提供
+
+在2012年，[卷积神经网络](../4-ComputerVision/07-ConvNets/README.md)首次用于图像分类，导致分类错误率显著下降（从近30%下降到16.4%）。2015年，微软研究院的ResNet架构[达到了人类级别的准确率](https://doi.org/10.1109/ICCV.2015.123)。
+
+从那时起，神经网络在许多任务中表现出非常成功的行为：
 
 ---
 
-Year | Human Parity achieved
------|--------
-2015 | [Image Classification](https://doi.org/10.1109/ICCV.2015.123)
-2016 | [Conversational Speech Recognition](https://arxiv.org/abs/1610.05256)
-2018 | [Automatic Machine Translation](https://arxiv.org/abs/1803.05567) (Chinese-to-English)
-2020 | [Image Captioning](https://arxiv.org/abs/2009.13682)
+年份 | 达到人类水平
+---|---
+2015 | [图像分类](https://doi.org/10.1109/ICCV.2015.123)
+2016 | [对话语音识别](https://arxiv.org/abs/1610.05256)
+2018 | [自动机器翻译](https://arxiv.org/abs/1803.05567)（中文到英文）
+2020 | [图像标题生成](https://arxiv.org/abs/2009.13682)
 
-Over the past few years we have witnessed huge successes with large language models, such as BERT and GPT-3. This happened mostly due to the fact that there is a lot of general text data available that allows us to train models to capture the structure and meaning of texts, pre-train them on general text collections, and then specialize those models for more specific tasks. We will learn more about [Natural Language Processing](../5-NLP/README.md) later in this course.
+在过去的几年里，我们见证了大型语言模型如BERT和GPT-3取得了巨大的成功。这主要是因为有大量通用的文本数据可用于训练模型以捕捉文本的结构和意义，在通用文本集合上进行预训练，然后将这些模型专门化为更具体的任务。我们将在本课程中进一步学习[自然语言处理](../5-NLP/README.md)。
 
-## 🚀 Challenge
+## 🚀 挑战
 
-Do a tour of the internet to determine where, in your opinion, AI is most effectively used. Is it in a Mapping app, or some speech-to-text service or a video game? Research how the system was built.
+浏览互联网，确定你认为AI在哪些方面最有效地被使用。是在地图应用中，还是某些语音转文本服务中，或者是视频游戏中？研究系统是如何构建的。
 
-## [Post-lecture quiz](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/201)
+## [课后测验](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/201)
 
-## Review & Self Study
+## 复习与自学
 
-Review the history of AI and ML by reading through [this lesson](https://github.com/microsoft/ML-For-Beginners/tree/main/1-Introduction/2-history-of-ML). Take an element from the sketchnote at the top of that lesson or this one and research it in more depth to understand the cultural context informing its evolution.
+通过阅读[这一课](https://github.com/microsoft/ML-For-Beginners/tree/main/1-Introduction/2-history-of-ML)复习AI和ML的历史。选取该课或本课开头的思维导图中的一个元素，深入研究以理解其演化背后的文化背景。
 
-**Assignment**: [Game Jam](assignment.md)
+**作业**: [游戏开发马拉松](assignment.md)

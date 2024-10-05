@@ -1,42 +1,42 @@
-# Getting Started with this Curricula
+# 开始使用本课程
 
-## Are you a student?
+## 你是学生吗？
 
-Get started with the following resources:
+通过以下资源开始：
 
-* [Student Hub page](https://docs.microsoft.com/learn/student-hub?WT.mc_id=academic-77998-cacaste) On this page, you will find beginner resources, Student packs, and even ways to get a free cert voucher. This is one page you want to bookmark and check from time to time as we switch out content at least monthly.
-* [Microsoft Student Learn ambassadors](https://studentambassadors.microsoft.com?WT.mc_id=academic-77998-cacaste) Join a global community of student ambassadors, this could be your way into Microsoft.
+* [学生中心页面](https://docs.microsoft.com/learn/student-hub?WT.mc_id=academic-77998-cacaste) 在此页面，您将找到初学者资源、学生包，甚至有获取免费证书券的方式。您应该将此页面收藏并不时查看，因为我们每月至少更换一次内容。
+* [微软学生学习大使](https://studentambassadors.microsoft.com?WT.mc_id=academic-77998-cacaste) 加入全球学生大使社区，这可能是您进入微软的一种方式。
 
-**Students**, there are a couple of ways to use the curriculum. First of all, you can just read the text and look through the code directly on GitHub. If you want to run the code in any of the notebooks - [read our instructions](./etc/how-to-run.md), and find more advice on how to do it [in this blog post](https://soshnikov.com/education/how-to-execute-notebooks-from-github/).
+**学生**，有几种使用课程的方式。首先，您可以直接阅读文本并在 GitHub 上查看代码。如果您想在任何笔记本中运行代码 - [阅读我们的说明](./etc/how-to-run.md)，并在这个 [博客文章](https://soshnikov.com/education/how-to-execute-notebooks-from-github/) 中找到更多建议。
 
-> **Note**: [Instructions on how to run the code in this curriculum](/how-to-run.md)
+> **注意**: [运行此课程代码的说明](/how-to-run.md)
 
-## Self Study
+## 自学
 
-However, if you would like to take the course as a self-study project, we suggest that you fork the entire repo to your own GitHub account and complete the exercises on your own or with a group:
+然而，如果您想将此课程作为自学项目，我们建议您将整个仓库 fork 到您自己的 GitHub 账户，并独自或与团队完成练习：
 
-* Start with a pre-lecture quiz.
-* Read the intro text for the lecture.
-* If the lecture has additional notebooks, go through them, reading and executing the code. If both TensorFlow and PyTorch notebooks are provided, you can focus on one of them - choose your favorite framework.
-* Notebooks often contain some of the challenges that require you to tweak the code a little bit to experiment.
-* Take the post-lecture quiz.
-* If there is a lab attached to the module - complete the assignment.
-* Visit the [Discussion board](https://github.com/microsoft/AI-For-Beginners/discussions) to "learn out loud".
+* 从课前测验开始。
+* 阅读课程的介绍文本。
+* 如果课程有额外的笔记本，请通读它们，阅读并执行代码。如果同时提供了 TensorFlow 和 PyTorch 笔记本，您可以专注于其中一个 - 选择您喜欢的框架。
+* 笔记本通常包含一些需要稍微调整代码以进行实验的挑战。
+* 完成课后测验。
+* 如果模块附有实验 - 完成作业。
+* 访问 [讨论区](https://github.com/microsoft/AI-For-Beginners/discussions) 来“公开学习”。
 
-> For further study, we recommend following these [Microsoft Learn](https://docs.microsoft.com/en-us/users/dmitrysoshnikov-9132/collections/31zgizg2p418yo/?WT.mc_id=academic-77998-cacaste) modules and learning paths.
+> 为进一步学习，我们推荐遵循这些 [微软学习](https://docs.microsoft.com/en-us/users/dmitrysoshnikov-9132/collections/31zgizg2p418yo/?WT.mc_id=academic-77998-cacaste) 模块和学习路径。
 
-**Teachers**, we have [included some suggestions](/for-teachers.md) on how to use this curriculum.
+**教师**，我们已经 [包含了一些建议](/for-teachers.md) 关于如何使用此课程。
 
 ---
 
-## Pedagogy
+## 教学法
 
-We have chosen two pedagogical tenets while building this curriculum: ensuring that it is hands-on **project-based** and that it includes **frequent quizzes**.
+在构建此课程时，我们选择了两个教学原则：确保它是基于**项目的实践**，并且包含**频繁的测验**。
 
-By ensuring that the content aligns with projects, the process is made more engaging for students and retention of concepts will be augmented. In addition, a low-stakes quiz before a class sets the intention of the student towards learning a topic, while a second quiz after class ensures further retention. This curriculum was designed to be flexible and fun and can be taken in whole or in part. The projects start small and become increasingly complex by the end of the 12-week cycle.
+通过确保内容与项目一致，学生的学习过程更加有趣，概念的保留也会增加。此外，课前的低风险测验设定了学生学习主题的意图，而课后的第二次测验则确保了进一步的保留。该课程设计灵活有趣，可以全部或部分完成。项目从小开始，随着 12 周周期的结束变得越来越复杂。
 
-> **A note about quizzes**: All quizzes are contained [in this app](https://red-field-0a6ddfd03.1.azurestaticapps.net/), for 50 total quizzes of three questions each. They are linked from within the lessons but the quiz app can be run locally; follow the instructions in the `etc/quiz-app` folder.
+> **关于测验的说明**: 所有测验都包含在 [这个应用程序](https://red-field-0a6ddfd03.1.azurestaticapps.net/) 中，共有 50 个测验，每个测验 3 个问题。它们从课程中链接，但测验应用程序可以本地运行；请按照 `etc/quiz-app` 文件夹中的说明进行操作。
 
-## Offline access
+## 离线访问
 
-You can run this documentation offline by using [Docsify](https://docsify.js.org/#/). Fork this repo, [install Docsify](https://docsify.js.org/#/quickstart) on your local machine, and then in the `etc/docsify` folder of this repo, type `docsify serve`. The website will be served on port 3000 on your localhost: `localhost:3000`. A pdf of the curriculum is available [at this link](/etc/pdf/readme.pdf).
+您可以通过使用 [Docsify](https://docsify.js.org/#/) 离线运行此文档。将此仓库 fork 到您的本地机器，按照 [Docsify 安装指南](https://docsify.js.org/#/quickstart) 进行安装，然后在此仓库的 `etc/docsify` 文件夹中，输入 `docsify serve`。网站将通过本地的 3000 端口提供服务：`localhost:3000`。课程的 PDF 可在 [此链接](/etc/pdf/readme.pdf) 获取。
